@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmeriInjuryLaw.com | Premium Legal Domain for Sale</title>
+    <title>AmeriInjuryLaw.com | Premier Legal Domain Asset</title>
     
-    <!-- الخطوط القانونية الفخمة -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    
-    <!-- الأيقونات -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
-    <!-- محرك التنسيق السريع Tailwind -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
@@ -19,14 +17,13 @@
             theme: {
                 extend: {
                     colors: {
-                        legalNavy: '#0f172a',
-                        legalGold: '#c5a059',
-                        legalBronze: '#8c6d31',
-                        legalBeige: '#fcfaf7'
+                        dark: '#050505',
+                        accent: '#d1b06b', // Brushed Gold
+                        softGray: '#a1a1aa'
                     },
                     fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
                         sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
                     }
                 }
             }
@@ -34,198 +31,193 @@
     </script>
 
     <style>
-        /*  */
-        .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92)), 
-                        url('https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=1920');
+        body { background-color: #050505; color: #ffffff; }
+        .hero-image {
+            background: linear-gradient(rgba(5, 5, 5, 0.7), rgba(5, 5, 5, 0.9)), 
+                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-            background-color: #0f172a;
         }
-        .text-glow {
-            text-shadow: 0 0 30px rgba(197, 160, 89, 0.5);
+        .blur-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: 0;
+            opacity: 0.15;
         }
-        .border-gold {
-            border-color: #c5a059;
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: #d1b06b;
+            transition: all 0.3s ease;
         }
     </style>
 </head>
-<body class="bg-white font-sans text-slate-800">
+<body class="font-sans selection:bg-accent selection:text-dark overflow-x-hidden">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b-2 border-legalGold px-6 py-4 shadow-md">
+    <!-- Header -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-dark/80 backdrop-blur-xl px-6 md:px-12 py-5">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-scale-balanced text-2xl text-legalGold"></i>
-                <span class="text-xl font-black uppercase tracking-tighter text-legalNavy italic">AmeriInjuryLaw</span>
+                <i class="fa-solid fa-scale-balanced text-accent text-xl"></i>
+                <span class="text-lg font-extrabold tracking-widest uppercase">Ameri<span class="text-accent">Injury</span></span>
             </div>
-            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
-                <a href="#home" class="hover:text-legalGold transition">Home</a>
-                <a href="#value" class="hover:text-legalGold transition">Value</a>
-                <a href="#contact" class="hover:text-legalGold transition">Direct Inquiry</a>
+            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest text-softGray">
+                <a href="#details" class="hover:text-accent transition">Overview</a>
+                <a href="#potential" class="hover:text-accent transition">Potential</a>
+                <a href="mailto:cccvcccv3@gmail.com" class="hover:text-accent transition">Contact</a>
             </div>
-            <div class="flex items-center space-x-4">
-                <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=ameriinjurylaw.com" target="_blank" class="bg-legalGold text-white px-6 py-2.5 rounded-sm text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-lg">
-                    Acquire on GoDaddy
-                </a>
-            </div>
+            <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=ameriinjurylaw.com" target="_blank" class="bg-accent hover:bg-white text-dark px-6 py-2 rounded-sm text-[10px] font-black uppercase tracking-widest transition-all">
+                Acquire
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg min-h-screen flex items-center justify-center px-6 pt-20">
-        <div class="max-w-6xl mx-auto text-center text-white">
-            <div class="inline-block border border-legalGold/50 px-6 py-1 mb-8 bg-legalGold/10">
-                <span class="text-legalGold text-[11px] font-bold uppercase tracking-[0.4em]">Official Premium Listing</span>
+    <section class="relative min-h-screen flex items-center justify-center hero-image px-6 pt-20">
+        <!-- Glow effects -->
+        <div class="blur-circle w-96 h-96 bg-accent top-1/4 left-1/4"></div>
+        <div class="blur-circle w-96 h-96 bg-blue-500 bottom-1/4 right-1/4"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto text-center">
+            <div class="inline-block border border-accent/30 px-5 py-1 mb-8 rounded-full bg-accent/5">
+                <span class="text-accent text-[10px] font-bold uppercase tracking-[0.4em]">Premium Tier-1 Listing</span>
             </div>
-            
-            <h1 class="text-5xl md:text-9xl font-serif font-bold mb-8 leading-tight tracking-tight text-glow uppercase italic">
-                Secure The <br />
-                <span class="text-legalGold">Legal Edge</span>
+            <h1 class="text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight break-words">
+                The Definitive Address <br> for <span class="italic text-accent">Legal Authority</span>
             </h1>
-            
-            <p class="text-slate-300 text-lg md:text-2xl mb-14 max-w-4xl mx-auto font-light leading-relaxed">
-                Ameriinjurylaw.com is an elite, authority-driven domain name. The ultimate digital brand for national law firm expansion and high-value lead generation.
+            <p class="text-softGray text-lg md:text-xl mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+                AmeriInjuryLaw.com – A high-authority, national-scale brand designed for elite law firms specializing in high-stakes litigation.
             </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
-                <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=ameriinjurylaw.com" target="_blank" class="group bg-white text-legalNavy px-14 py-6 font-black uppercase tracking-widest text-sm hover:bg-legalGold hover:text-white transition-all shadow-2xl flex items-center border-2 border-white w-full sm:w-auto">
-                    <i class="fa-solid fa-cart-shopping mr-3 text-legalGold group-hover:text-white transition"></i> Buy via GoDaddy
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=ameriinjurylaw.com" target="_blank" class="w-full sm:w-auto bg-white text-dark px-12 py-5 font-bold uppercase tracking-widest text-xs hover:bg-accent transition-all shadow-2xl">
+                    Buy on GoDaddy
                 </a>
-                <a href="mailto:cccvcccv3@gmail.com" class="text-white border border-white/30 px-10 py-6 text-sm font-black uppercase tracking-widest hover:bg-white/10 transition w-full sm:w-auto">
-                    Contact Owner
+                <a href="mailto:cccvcccv3@gmail.com" class="w-full sm:w-auto border border-white/20 text-white px-10 py-5 font-bold uppercase tracking-widest text-xs hover:bg-white/5 transition-all">
+                    Inquire: cccvcccv3@gmail.com
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Branding Value Section -->
-    <section id="value" class="py-32 px-6 bg-legalBeige">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-            <div class="relative bg-slate-200 rounded-lg shadow-2xl border-4 border-white overflow-hidden">
-                <!--  -->
-                <img src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1200" class="w-full h-[600px] object-cover" alt="Legal Trust">
-                <div class="absolute -bottom-10 -right-10 bg-legalNavy p-14 text-white shadow-2xl hidden md:block border-b-8 border-legalGold">
-                    <p class="font-serif italic text-4xl text-legalGold leading-tight">"Integrity <br> & Authority"</p>
+    <!-- Content Sections -->
+    <section id="details" class="py-32 px-6 bg-dark border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold leading-tight">
+                        Why this asset <br> <span class="text-accent italic">matters.</span>
+                    </h2>
+                    <p class="text-softGray text-lg leading-relaxed">
+                        In the competitive landscape of personal injury law, credibility is your strongest currency. <strong>AmeriInjuryLaw.com</strong> offers a name that is intuitive, authoritative, and perfectly positioned for national expansion.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start space-x-4">
+                            <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full border border-accent/40 flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-1">SEO Dominance</h4>
+                                <p class="text-softGray text-sm">Targets high-value keywords "Injury" and "Law" with an authoritative national prefix.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full border border-accent/40 flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-1">Instant Credibility</h4>
+                                <p class="text-softGray text-sm">Projects an image of an established, institutional law firm from day one.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <h2 class="text-4xl md:text-7xl font-bold font-serif text-legalNavy mb-8 leading-tight">Superior <br /> <span class="text-legalGold italic font-serif text-3xl uppercase tracking-[0.2em]">SEO Foundation</span></h2>
-                <p class="text-slate-600 text-lg leading-relaxed mb-10 italic">
-                    Establish your firm's dominance with a domain that projects nationwide credibility. **AmeriInjuryLaw.com** offers instant recall and superior market positioning.
-                </p>
-                <div class="space-y-10">
-                    <div class="flex items-start">
-                        <div class="w-14 h-14 rounded-xl bg-legalGold/10 text-legalGold flex items-center justify-center mr-6 shrink-0 shadow-sm"><i class="fa-solid fa-flag-usa text-xl"></i></div>
-                        <div>
-                            <h4 class="font-black uppercase tracking-widest text-sm text-legalNavy mb-2 italic">National Identity</h4>
-                            <p class="text-slate-500 text-sm leading-relaxed">The "Ameri" prefix instantly builds a nationwide image of institutional trust and scale for personal injury cases.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-14 h-14 rounded-xl bg-legalGold/10 text-legalGold flex items-center justify-center mr-6 shrink-0 shadow-sm"><i class="fa-solid fa-envelope-open-text text-xl"></i></div>
-                        <div>
-                            <h4 class="font-black uppercase tracking-widest text-sm text-legalNavy mb-2 italic">Exclusive Inquiry</h4>
-                            <p class="text-slate-500 text-sm leading-relaxed">Direct communication channel with the domain owner for private negotiations: <strong class="text-legalNavy">cccvcccv3@gmail.com</strong></p>
-                        </div>
-                    </div>
+                <div class="relative group overflow-hidden rounded-lg">
+                    <!--  -->
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition duration-700" alt="Legal Icon">
+                    <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition duration-700"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industry Use Cases Section -->
-    <section class="py-32 px-6 bg-white">
-        <div class="max-w-7xl mx-auto text-center mb-24 italic">
-            <h2 class="text-4xl md:text-5xl font-bold font-serif text-legalNavy mb-4 uppercase tracking-tighter italic">Unlimited <span class="text-legalGold">Possibilities</span></h2>
-            <div class="h-1 w-24 bg-legalGold mx-auto"></div>
-        </div>
-
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Card 1 -->
-            <div class="group">
-                <div class="overflow-hidden rounded-2xl mb-8 shadow-xl border border-slate-100 bg-slate-100">
-                    <!--  -->
-                    <img src="https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700" alt="Law Practice">
-                </div>
-                <h3 class="text-2xl font-bold font-serif text-legalNavy mb-4 tracking-tight uppercase italic">Law Firm Portal</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">A prestigious address for a national law firm specializing in accident and medical injury litigation.</p>
+    <!-- Usage Scenarios (Bento Grid) -->
+    <section id="potential" class="py-32 px-6 bg-dark border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">Strategic <span class="text-accent italic">Potential</span></h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="group">
-                <div class="overflow-hidden rounded-2xl mb-8 shadow-xl border border-slate-100 bg-slate-100">
-                    <!--  -->
-                    <img src="https://images.pexels.com/photos/5669614/pexels-photo-5669614.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700" alt="Gavel">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Box 1 -->
+                <div class="p-10 border border-white/10 bg-white/5 card-hover transition rounded-lg">
+                    <i class="fa-solid fa-landmark text-3xl text-accent mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">National Firm Portal</h3>
+                    <p class="text-softGray text-sm leading-relaxed italic">The ideal digital headquarters for a multi-state law practice seeking a unified, prestigious brand.</p>
                 </div>
-                <h3 class="text-2xl font-bold font-serif text-legalNavy mb-4 tracking-tight uppercase italic text-legalGold">Lead Generation</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Establish a high-converting marketplace connecting legal seekers with top-tier injury attorneys.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="group">
-                <div class="overflow-hidden rounded-2xl mb-8 shadow-xl border border-slate-100 bg-slate-100">
-                    <!--  -->
-                    <img src="https://images.pexels.com/photos/6077360/pexels-photo-6077360.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700" alt="Law Books">
+                <!-- Box 2 -->
+                <div class="p-10 border border-white/10 bg-white/5 card-hover transition rounded-lg">
+                    <i class="fa-solid fa-chart-line text-3xl text-accent mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Lead Acquisition Hub</h3>
+                    <p class="text-softGray text-sm leading-relaxed italic">Create a high-converting marketplace connecting victims with top-rated injury attorneys nationwide.</p>
                 </div>
-                <h3 class="text-2xl font-bold font-serif text-legalNavy mb-4 tracking-tight uppercase italic">Resource Hub</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Launch an educational authority site providing comprehensive insights into American injury laws.</p>
+                <!-- Box 3 -->
+                <div class="p-10 border border-white/10 bg-white/5 card-hover transition rounded-lg">
+                    <i class="fa-solid fa-shield-halved text-3xl text-accent mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Legal Authority Site</h3>
+                    <p class="text-softGray text-sm leading-relaxed italic">Launch a dominant educational resource for the US market focused on personal injury rights.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-32 px-6 bg-legalNavy overflow-hidden relative">
-        <!--  -->
-        <div class="absolute -top-10 -right-10 opacity-5 text-[20rem] text-legalGold transform -rotate-12 pointer-events-none">
-            <i class="fa-solid fa-gavel"></i>
+    <!-- Gallery Section -->
+    <section class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="h-80 overflow-hidden rounded-lg">
+                    <!--  -->
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition duration-500" alt="Office">
+                </div>
+                <div class="h-80 overflow-hidden rounded-lg">
+                    <!--  -->
+                    <img src="https://images.unsplash.com/photo-1473187983305-f615310e7daa?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition duration-500" alt="Scales">
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="max-w-4xl mx-auto bg-white p-12 md:p-24 shadow-2xl relative z-10 text-center">
-            <h2 class="text-4xl md:text-6xl font-bold font-serif text-legalNavy mb-4 uppercase italic">Confidential <span class="text-legalGold">Inquiry</span></h2>
-            <p class="text-slate-400 mb-16 max-w-lg mx-auto leading-relaxed italic">Acquire this premium asset today. Submit your private offer or contact us directly.</p>
+    <!-- Acquisition & Contact -->
+    <section class="py-32 px-6 bg-dark">
+        <div class="max-w-4xl mx-auto border border-accent/20 bg-accent/5 p-12 md:p-20 text-center rounded-lg shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 opacity-5 text-9xl text-accent rotate-12 pointer-events-none">
+                <i class="fa-solid fa-gavel"></i>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold mb-8 italic">Acquisition <span class="text-accent not-italic font-sans">Enquiry</span></h2>
+            <p class="text-softGray mb-12 max-w-lg mx-auto">This domain is a unique, one-of-a-kind digital asset. Contact the registry for private offers or purchase directly.</p>
             
-            <div class="mb-12">
-                <p class="text-xs font-black uppercase tracking-[0.4em] text-slate-400 mb-2">Direct Email</p>
-                <a href="mailto:cccvcccv3@gmail.com" class="text-2xl md:text-3xl font-black text-legalNavy hover:text-legalGold transition">cccvcccv3@gmail.com</a>
+            <div class="flex flex-col space-y-8">
+                <a href="https://www.godaddy.com/domainsearch/find?domainToCheck=ameriinjurylaw.com" target="_blank" class="bg-white text-dark py-6 font-bold uppercase tracking-widest text-sm hover:bg-accent transition shadow-xl">
+                    Secure via GoDaddy
+                </a>
+                <div class="border-t border-white/10 pt-8">
+                    <p class="text-[10px] uppercase font-bold text-softGray mb-3 tracking-[0.3em]">Direct Email Contact</p>
+                    <a href="mailto:cccvcccv3@gmail.com" class="text-xl md:text-2xl font-bold text-accent hover:text-white transition tracking-tight">cccvcccv3@gmail.com</a>
+                </div>
             </div>
-
-            <form class="space-y-10 text-left" action="mailto:cccvcccv3@gmail.com" method="post" enctype="text/plain">
-                <div class="grid md:grid-cols-2 gap-10">
-                    <div class="space-y-3">
-                        <label class="block text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 ml-1 italic">Full Name</label>
-                        <input type="text" name="name" placeholder="John Doe, Esq." class="w-full border-b-2 border-slate-200 py-4 outline-none focus:border-legalGold transition text-lg text-legalNavy bg-transparent" required />
-                    </div>
-                    <div class="space-y-3">
-                        <label class="block text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 ml-1 italic">Email Address</label>
-                        <input type="email" name="email" placeholder="contact@firm.com" class="w-full border-b-2 border-slate-200 py-4 outline-none focus:border-legalGold transition text-lg text-legalNavy bg-transparent" required />
-                    </div>
-                </div>
-                <div class="space-y-3">
-                    <label class="block text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 ml-1 italic">Offer Amount (USD)</label>
-                    <input type="text" name="offer" placeholder="e.g. $25,000" class="w-full border-b-2 border-slate-200 py-4 outline-none focus:border-legalGold transition text-lg text-legalNavy bg-transparent" />
-                </div>
-                <button type="submit" class="w-full bg-legalNavy text-white py-8 font-black uppercase tracking-[0.6em] text-xs hover:bg-legalGold transition-all shadow-xl">
-                    Submit Private Offer
-                </button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-24 bg-[#020617] text-center border-t border-slate-900">
-        <div class="flex flex-col items-center justify-center space-y-8 text-slate-700 mb-10 font-black tracking-tighter uppercase italic">
-            <div class="text-4xl flex items-center space-x-4">
-                <i class="fa-solid fa-scale-balanced text-3xl text-slate-800"></i>
-                <span>AmeriInjuryLaw</span>
+    <footer class="py-20 bg-dark border-t border-white/5 text-center">
+        <div class="flex flex-col items-center space-y-6">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-scale-balanced text-accent"></i>
+                <span class="text-lg font-extrabold uppercase tracking-widest italic">AmeriInjuryLaw</span>
             </div>
-            <div class="text-sm lowercase tracking-normal font-normal opacity-50">
-                Inquiries: cccvcccv3@gmail.com
-            </div>
+            <p class="text-softGray text-[10px] font-bold uppercase tracking-[0.5em]">
+                &copy; 2026 AmeriInjuryLaw • Premium Legal Asset • cccvcccv3@gmail.com
+            </p>
         </div>
-        <p class="text-slate-600 text-[10px] font-bold uppercase tracking-[0.6em] opacity-40">
-            &copy; 2026 AmeriInjuryLaw Assets • High-Authority US Legal Domain Asset
-        </p>
     </footer>
 
 </body>
